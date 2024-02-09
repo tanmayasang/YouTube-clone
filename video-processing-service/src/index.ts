@@ -3,6 +3,7 @@ import ffmmpeg from "fluent-ffmpeg";
 import { convertVideo, deleteProcessedVideo, deleteRawVideo, downloadRawVideo, setupDirectories, uploadProcessedVideo } from "./storage"; 
 import { error } from "console";
 
+// Create the local directories for videos
 setupDirectories();
 
 const app = express();
@@ -34,7 +35,7 @@ app.post("/process-video",async (req,res) => {
     await Promise.all([
     deleteRawVideo(inputFileName),
     deleteProcessedVideo(outputFileName)]);
-    console.log(err);
+    // console.log(err);
     return res.status(500).send('Internal Server Error: video processing failed.');
   }
 
