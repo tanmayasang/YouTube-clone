@@ -10,12 +10,7 @@ import { getAuth,
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCbStP5pfQsevS_Ji9jrMRtl6WRCYKnFgI",
-  authDomain: "yt-clone-ts.firebaseapp.com",
-  projectId: "yt-clone-ts",
-  appId: "1:1045784103297:web:d5c132e98bf74541a08080"
-};
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
